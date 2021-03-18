@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>KC-FORMS</title>
+<link rel = "stylesheet" type = "text/css" href = "css\form.css"> </link>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+		$(document).ready(function(){
+		$("input").focus(function(){
+        $(this).css("background-color", "#cccccc");
+		});
+		$("input").blur(function(){
+        $(this).css("background-color", "#ffffff");
+		});
+	});
+</script>
+
+<script>
+		function Submit()
+		{
+			var namepat = /^[A-Za-z]{3,35}$/;
+			var emailpat = /^[A-Za-z0-9._-]{3,15}[@][A-Za-z]{4,10}[.][com]{3}$/;
+			var nameid = document.getElementById('firstname').value;	
+			var passwordid = document.getElementById('epassword').value;
+			var passwordid = document.getElementById('cpassword').value;			
+			var emailid = document.getElementById('email').value;
+				if(nameid == "" || passwordid == ""  || emailid == "")
+				{
+		
+					alert('Please fill the form');	
+				}
+				else
+				{
+				if(!namepat.test(nameid))
+				{
+					alert('Incorrect name  pattern');
+				}	
+				else if(!emailpat.test(emailid))
+				{
+					alert('Incorrect email pattern');
+				}
+		
+				else
+				{
+					alert('Your Booking has been done!');
+				}
+		}
+	}
+	</script>
+</head>
+<body>
+<div id = "header">
+	<p style="color: white">KARACHI CONTINENTAL</p>
+		</div>
+	
+	
+
+	<div id = "login">
+	<br>
+	<fieldset>
+	<h1>Personal Information</h1><br>
+	<form>
+		
+			<br>
+			First Name 
+			<input type = "text" id = "firstname" name = "name_1" placeholder = "Enter First Name">
+			<br><br>
+			Last Name  
+			<input type = "text" id = "lastname" name = "" placeholder = "Enter Second Name">
+			<br><br>
+			Email  
+			<input type = "text" id = "email" name = "emailid" title="xyz123@gmail.com" placeholder = "Enter Email">
+			<br><br>
+			Reservation Date 
+			<input type = "text" id = "reservation" name = "room type" title="xyz123@gmail.com" placeholder = "">
+			<br>
+			<br>
+			<label>Room Type</label>
+			<select id="reservation" name="reservation" placeholder = "Room Type">
+      		<option value="Deluxe King Room">Deluxe King Room</option>
+       		<option value="Deluxe Twin Room">Deluxe Twin Room</option>
+       		<option value="Pearl King Room">Pearl King Room</option>
+        	<option value="Pearl Twin Room">Pearl Twin Room</option>
+        	<option value="Executive King Room">Executive King Room</option>
+        	<option value="Executive Suite">Executive Suite</option>
+        	<option value="Deluxe Suite">Deluxe Suite</option>
+      		</select>
+			<br><br>
+			<input type = "radio" >
+			Sign Up for newsletter<br><br>
+			<h1>Sign In Information</h1><br>
+			Enter a Password
+			<input type = "text" id = "epassword" placeholder = "Enter Password">
+			<br><br>
+			Confirm Password
+			<input type = "text" id = "cpassword" placeholder = "Confirm Password">
+			<br><br>
+		
+			<input type = "submit" value = "Create Account" onclick="Submit()"></button>
+			
+		</fieldset>
+	</form>
+	</div>
+	
+	<div id = "footer">
+	<hr>
+	</div>
+	<div id = "footer">
+	
+	</div>

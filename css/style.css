@@ -1,0 +1,154 @@
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+img {vertical-align:middle;}
+
+/* Slideshow container */
+.slideshow-container 
+{
+	max-width: 100%;
+	max-height:600px;
+	position: relative;
+	margin: auto;
+	overflow:hidden;
+}
+/* Caption text */
+.text
+ {
+	color: white;
+	position: absolute;
+	width: 50%;
+	position: absolute;
+	top: 65%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	font-size:50px;
+	background-color: #0009;
+	font-weight: 900; 
+}
+/* left text */
+.leftText	
+{
+	color: #f2f2f2;
+	font-size: 20px;
+	font-family:verdana;
+	padding: 8px 12px;
+	position: absolute;
+	top: 1%;
+	left:1%;
+	height:43px ;
+	width: 20.5%;
+	background-color:red;
+}
+/* Fading animation */
+.fade
+{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+.container
+{
+	height:1300px;
+	width:100%;
+	background-color:white;
+	overflow:hidden;
+	float:left;
+	position:relative;
+}
+.row
+{
+	display: -ms-flexbox; 
+	display: flex;
+	-ms-flex-wrap: wrap; 
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column 
+{
+	-ms-flex: 25%; 
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+.column img:hover
+ {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+.column img
+{
+	margin-top: 8px;
+	vertical-align: middle;
+}
+	
+}
+@-webkit-keyframes fade
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px)
+{
+  .text {font-size: 11px}
+}
+footer{
+	background-color: black;
+	color: white;
+	box-sizing: border-box;
+}
+#foot-head{
+	height:150px;
+	width: :100%;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	margin: auto 5%;
+}
+#foot-head>div:nth-of-type(1){
+	border-top: 2px white solid;
+	grid-column: 1;
+	margin-top: 11%;
+	padding-top: 5%;
+}
+#foot-head>h3{
+	grid-column: 2;
+	margin-top: 8%;
+	display: inline-block;
+	grid-row: 1;
+	font-size: 2vw;
+}
+#foot-head>div:nth-of-type(2){
+	border-top: 2px white solid;
+	grid-column: 3;
+	margin-top: 11%;
+	padding-top: 15%;
+
+}
+#submit{
+	background-color: black;
+	border: 1px solid white;
+	width: 30%;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 0.7% 1%;
+	color: white;
+}
+#email{
+	background-color: black;
+	border: 1px solid white;
+	width: 50%;
+	font-weight: bold;
+	padding: 0.7% 1.5%;
+	color: white;	
+}

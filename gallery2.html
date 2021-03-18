@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css\style.css">
+	<link rel="stylesheet" type="text/css" href="css\navbar.css">
+	<link rel="stylesheet" type="text/css" href="css\content.css">
+	<title>GALLERY</title>
+</head>
+<body>
+	<div id="wrapper">
+		<header>	
+			<img id="menu" src="images\icons8-menu-filled-50.png" style="width: 30px" >
+			<nav >
+				<img id="cross" src="images\cross2.png">
+				<ul id="links">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="offer.html">Privillage Club</a>
+					</li>
+					<li>
+						<a href="gallery2.html">Gallery</a>
+					</li>
+					<li>
+						<a href="booking.html">Bookings</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+		<div class="leftText">KARACHI CONTINENTAL</div>	
+		<img src="images\ban4.jpg" style="width:100%">
+		<div class="text">ENJOY THE FOOD AND</br> ROOMS IN OUR HOTEL</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="leftText">KARACHI CONTINENTAL</div>
+		<img src="images\444.jpg" style="width:100%">
+		<div class="text">ENJOY THE GREATEST </br>PLEASURE IN OUR HOTEL</div>
+	</div>
+
+	<div class="mySlides fade">
+		<div class="leftText">KARACHI CONTINENTAL</div>
+		<img src="images\ban2.jpg" style="width:100%">
+		<div class="text">ENJOY THE BEST AND </br>AMAZING SERVICES </br> </div>
+	</div>
+
+</div>
+
+<br>
+
+<div class="container">
+	<h1 style="font-size:50px; color: white;background-color: #bc4747;margin: 1.5% 30%;border-radius: 10px;"><center>OUR GALLERY</center></h1>
+<div class="row"> 
+	<div class="column">
+		<img src="images\7.jpg" style="width:100%;border-radius:10px">
+		<img src="images\8.jpg" style="width:100%">
+		<img src="images\6.jpg" style="width:100%;border-radius:10px">
+		<img src="images\1.jpg" style="width:100%;border-radius:10px">
+
+	</div>
+	<div class="column">
+		<img src="images\4.jpg"style="width:100%;border-radius:10px">
+		<img src="images\best.jpg" style="width:100%;border-radius:10px">
+		<img src="images\04.jpg" style="width:100%;border-radius:10px">
+		<img src="images\03.jpg" style="width:100%;border-radius:10px">
+		<img src="images\12.jpg" style="width:100%;border-radius:10px">
+		<img src="images\20.jpg" style="width:100%;border-radius:10px">
+	
+	</div>  
+	<div class="column">
+		<img src="images\16.jpg" style="width:100%">
+		<img src="images\17.jpg" style="width:100%">
+		<img src="images\18.jpg" style="width:100%">
+		<img src="images\2.jpg" style="width:100%;border-radius:10px">
+	</div>
+	<div class="column">
+		<img src="images\40.jpg" style="width:100%;border-radius:10px">
+		<img src="images\28.jpg" style="width:100%;border-radius:10px">
+		<img src="images\21.jpg" style="width:100%;border-radius:10px">
+		<img src="images\19.jpg" style="width:100%;border-radius:10px">
+		<img src="images\23.jpg" style="width:100%;border-radius:10px">
+		<img src="images\26.jpg" style="width:100%;border-radius:10px">
+
+	</div>
+</div>
+<footer>
+	<div id="foot-head">
+		<h3>KARACHI CONTINENTAL</h3>
+		<div>
+			<P>PRIVACY POLICY</P>
+			<P>TERMS  &COPY COPY</P>
+			<P>ABOUT</P>
+		</div>
+		<div>
+			<input for="submit" type="email" name="Email" placeholder="Name@Email.com" id="email" checked>
+			<input type="submit" name="" id="submit" >
+		</div>
+	</div>
+</footer>
+<script type="text/javascript" src="javascript\navbar.js"></script>
+<script type="text/javascript" src=".\javascript\content.js"></script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+</body>
+</html> 
